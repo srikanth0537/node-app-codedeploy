@@ -7,13 +7,13 @@ hooks:
   BeforeInstall:
   - location: scripts/codedep_before_install.sh
     timeout: 300
-    runas: ec2-user
+    runas: root
   AfterInstall:
   - location: scripts/codedep_after_install.sh
     timeout: 300
-    runas: ec2-user
+    runas: root
   ApplicationStart:
   - location: scripts/codedep_application_start.sh
     timeout: 300
-    runas: ec2-user
+    runas: root
 
